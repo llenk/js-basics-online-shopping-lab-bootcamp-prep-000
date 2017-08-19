@@ -44,6 +44,9 @@ function viewCart() {
         string += "" + imet + " at \$" + cart[i][imet] + ', ';
       }
     }
+    for (var imet in cart[cart.length-1]) {
+      string += " and " + imet +  " at \$" + cart[cart.length-1][imet] + ".";
+    }
   }
   console.log(string);
 }
