@@ -31,7 +31,7 @@ function viewCart() {
 
   }
   else if (cart.length === 2) {
-    var
+    
   }
   console.log(string);
 }
