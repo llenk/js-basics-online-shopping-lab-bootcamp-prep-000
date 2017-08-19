@@ -38,6 +38,13 @@ function viewCart() {
       string += "" + imet +  " at \$" + cart[1][imet] + ".";
     }
   }
+  else if (cart.length > 2) {
+    for (var i = 0; i < cart.length-1; i++) {
+      for (var imet in cart[i]) {
+        string += "" + imet + " at \$" + cart[i][imet] + ', ';
+      }
+    }
+  }
   console.log(string);
 }
 
