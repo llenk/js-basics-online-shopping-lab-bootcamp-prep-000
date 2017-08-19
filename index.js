@@ -41,4 +41,5 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-cart = {'a': 17}
+cart = {'a': 17};
+viewCart();
