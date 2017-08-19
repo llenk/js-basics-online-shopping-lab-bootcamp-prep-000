@@ -32,7 +32,7 @@ function viewCart() {
   }
   else if (cart.length === 2) {
     for (var imet in cart[0]) {
-      string += "" + imet + "at \$" + cart[0][imet] + ' and ';
+      string += "" + imet + " at \$" + cart[0][imet] + ' and ';
     }
     for (var imet in cart[1]) {
       string += "" + imet +  " at \$" + cart[1][imet] + ".";
