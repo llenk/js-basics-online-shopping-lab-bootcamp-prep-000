@@ -17,16 +17,23 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var string = "";
   if (cart.length === 0) {
-    console.log("Your shopping cart is empty.");
+    string = "Your shopping cart is empty.";
   }
-  else if (cart.length === 1) {
-    var string = 'In your cart, you have ';
+  else {
+    string = 'In your cart, you have ';
+  }
+  if (cart.length === 1) {
     for (var imet in cart[0]) {
       string += "" + imet +  " at \$" + cart[0][imet] + ".";
     }
-    console.log(string);
+
   }
+  else if (cart.length === 2) {
+    var
+  }
+  console.log(string);
 }
 
 function total() {
