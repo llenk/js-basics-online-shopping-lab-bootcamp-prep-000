@@ -20,7 +20,7 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   }
   else if (cart.length === 1) {
-    var string += 'In your cart, you have';
+    var string = 'In your cart, you have';
     for (var imet in cart[0]) {
       string += `${imet} at ${cart[0][imet]}.`
     }
