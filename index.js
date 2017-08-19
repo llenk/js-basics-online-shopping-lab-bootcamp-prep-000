@@ -52,7 +52,13 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  sum = 0;
+  for (var i = 0; i < cart.length; i++) {
+    for (var j in cart[i]) {
+      sum += cart[i][j];
+    }
+  }
+  return sum;
 }
 
 function removeFromCart(item) {
