@@ -62,7 +62,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var inCart = false;
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].hasOwnProperty([item])) {
+      inCart = true;
+      cart.splice(i, 1);
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
