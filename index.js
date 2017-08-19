@@ -23,7 +23,7 @@ function viewCart() {
   else if (cart.length === 1) {
     var string = 'In your cart, you have';
     for (var imet in cart[0]) {
-      string += "" + imet +  " at " cart[0][imet] + ".";
+      string += "" + imet +  " at " + cart[0][imet] + ".";
     }
     console.log(string);
   }
